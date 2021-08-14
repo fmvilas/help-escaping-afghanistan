@@ -51,8 +51,8 @@ export default function Home() {
       <Head>
         <title>Help escaping Afghanistan</title>
         <link rel="icon" href="/favicon.ico" />
-        <Script src="https://js.stripe.com/v3"></Script>
       </Head>
+      <Script src="https://js.stripe.com/v3"></Script>
       {error && (<div>{error}</div>)}
 
       <div className="w-full bg-cover bg-center bg-blend-overlay bg-gray-800" style={{ backgroundImage: 'url(herat.jpg)' }}>
