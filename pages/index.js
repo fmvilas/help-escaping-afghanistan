@@ -66,7 +66,7 @@ export default function Home() {
           <div>
             <div className="prose lg:prose-xl">
               <p>
-                Hi! This is Lukasz and Fran on behalf of our friend. We&apos;re trying to fundraise for him and his family to escape from the war in Afghanistan. This is his story:
+                Hi! This is <a href="https://www.twitter.com/derberq" target="_blank">Lukasz</a> and <a href="https://www.twitter.com/fmvilas" target="_blank">Fran</a> on behalf of our friend. We&apos;re trying to fundraise for him and his family to escape from the war in Afghanistan. This is his story:
               </p>
               <p>
                 ---
