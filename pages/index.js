@@ -33,7 +33,7 @@ export default function Home() {
        * https://stripe.com/docs/payments/checkout/fulfill-orders
        */
       successUrl: 'http://localhost:3000/thanks',
-      cancelUrl: 'http://localhost:3000/cancelled',
+      cancelUrl: 'http://localhost:3000/',
     })
       .then(function (result) {
         if (result.error) {
@@ -47,21 +47,22 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white mb-14">
       <Head>
         <title>Help escaping Afghanistan</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Script src="https://js.stripe.com/v3"></Script>
       {error && (<div>{error}</div>)}
 
       <div className="w-full bg-cover bg-center bg-blend-overlay bg-gray-800" style={{ backgroundImage: 'url(herat.jpg)' }}>
-        <h1 className="py-48 text-6xl text-white font-bold text-center">
-          <span className="px-24 py-16">Help escaping Afghanistan</span>
+        <h1 className="lg:py-48 lg:text-6xl py-16 text-5xl text-white font-bold text-center">
+          Help escaping Afghanistan
         </h1>
       </div>
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense lg:gap-24">
-        <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 lg:col-span-2">
+        <div className="px-4 py-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 lg:col-span-2">
           <div>
             <div className="prose lg:prose-xl">
               <p>
@@ -92,8 +93,8 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-12 sm:mt-16 lg:mt-0">
-          <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-            <Card className="lg:mt-12 sticky top-16">
+          <div className="w-full px-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+            <Card className="lg:mt-12 lg:sticky lg:top-16">
               <div>
                 <h3 className="text-lg mb-4 font-bold">Help them escape from war</h3>
                 <label htmlFor="donation" className="block text-sm font-medium text-gray-700 mb-2">
